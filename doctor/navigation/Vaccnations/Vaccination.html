@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Vaccination.css">
+</head>
+
+<body>
+    <div class="vaccein">
+        <form method="post">
+            <h2>מתן חיסון</h2>
+            <input type="tel" id="Phone" name="Phone" placeholder="Pet owner phone number"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" href="#" data-toggle="tooltip" title="הזן מספר טלפון של בעל חיית המחמד" required />
+            <input type="text" name="Pname" id="Pname" placeholder="Pet name" href="#" data-toggle="tooltip" title="הזן את שם חיית החמד"><br>
+            <select id="Vacceins" name="vacceins" href="#" data-toggle="tooltip" title="בחר את סוג החיסון שניתן לחיית המחמד">
+                <option>vaccine type:</option>
+                <option value="משושה I">משושה I</option>
+                <option value="משושה II">משושה II</option>
+                <option value="משושה III">משושה III</option>
+                <option value="כלבת">כלבת</option>
+                <option value="תולעים">תולעים</option>
+            </select>
+        </form>
+        <button onclick="updateVaccein()" href="#" data-toggle="tooltip" title="לחץ כאן בסיום הזנת הפרטים על מנת לעדכן את החיסון שבוצע בפנקס החיסונים של חיית המחמד">upload</button><br>
+    </div>
+    <script src="Vaccination.js"></script>
+</body>
+
+</html>

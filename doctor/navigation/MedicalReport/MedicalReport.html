@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="MedicalReport.css">
+</head>
+
+<body>
+    <div class="MedicalReport">
+        <form method="post">
+            <h2>דוח רפואי</h2>
+            <input type="tel" id="Phone" name="Phone" placeholder="Pet owner phone number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  href="#" data-toggle="tooltip" title="הזן מספר טלפון שלך בעל חיית המחמד" required />
+            <input type="text" name="Pname" id="Pname" placeholder="Pet name" href="#" data-toggle="tooltip" title="הזן את שם חיית המחמד"><br>
+            <label for="appointment type">appointment type:</label>
+            <select id="AppType" placeholder="Appointment type:" name="appointment type" href="#" data-toggle="tooltip" title="בחר את סוג התור">
+                <option value="vaccine">vaccine</option>
+                <option value="lab">lab</option>
+                <option value="emergency">emergency</option>
+                <option value="regular">regular</option>
+            </select><br><br>
+            <label  for="story">medical report:</label><br>
+            <textarea id="Report" name="report" rows="5" cols="33" placeholder="...הזן ד'וח רפואי עבור ביקור זה" href="#" data-toggle="tooltip" title="מלא בתיבה זו דוח רפואי עבור ביקור זה "></textarea>
+        </form>
+        <button onclick="uploadReport()" href="#" data-toggle="tooltip" title="לחץ בסיום הזנת הפרטים על מנת להעלות דוח רפואי זה">upload</button><br>
+    </div>
+    <script src="MedicalReport.js"></script>
+</body>
+
+</html>
